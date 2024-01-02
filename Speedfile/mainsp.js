@@ -47,9 +47,9 @@ function check() {
 
         if (!isNaN(speed) && speed >= 0 && speed <= 300) {
             let Demerits = speedLimit(speed);
-            console.log(`The grade for ${speed} is: ${Demerits}`);
+            console.log(`The outcome for ${speed} km/hr is: ${Demerits}`);
         } else {
-            console.log("Speed should be between 0 and 100.");
+            console.log("Speed should be between 0 and 300.");
         }
     } catch (error) {
         console.log("Invalid input. Please enter a valid number.");
