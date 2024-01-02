@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>toy problem assignment</head>
+    <link rel ="stylesheet" type="text/css" href="toy-problem.css">
+    <script async src= "toy-problem.js"></script>
+    <body>
+        
+        <div id = "grading" class="toy-problem">
+        <form>
+            <label for ="score">Your Score:</label>
+             <input type="text" id="score"  name="score" min="0" max="100"><br>
+             <button type="button" id= "grade" onClick="gradeGenerator()">Generate Grade</button>
+             </form> </div>
+        <div id = "speedDetector" class="toy-problem">
+         <form>
+            <label for ="speed">Driving Speed:</label>
+            <input type="text" id="speed"  name="speed"><br>
+            <button type="button" id= "print" onClick="speedDetector()">Demerit message</button>
+        </form> </div>
+        <div id = "netSalary" class="toy-problem">
+            <form>
+               <label for ="basicSalary">basicSalary:</label>
+               <input type="text" id="Basic Salary"  name="basicSalary"><br>
+               <label for ="benefit">Benefits:</label>
+               <input type="text" id="benefit"  name="benefit"><br>
+               <button type="button" id="calcButton" name="calcButton">netSalary</button>
+           </form> </div>
+                        
+    </body>
+   
+</html>
