@@ -1,0 +1,94 @@
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* 1. Student Grade Generator */
+
+#form {
+    height: 220px;
+    width: 300px;
+    background-color: #000000;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -17%);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.124);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);
+    padding: 40px 45px;
+}
+
+.img1, h4.grad {
+    display: inline-block;
+    vertical-align: middle; 
+
+}
+
+.info1 {
+    height: 220px;
+    width: 440px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    border-radius: 10px;
+    transform: translate(-50%, -17%);
+}
+
+
+
+h1.stgrade {
+    margin-top: -15px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+
+}
+
+.label {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+
+
+#grading {
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    color:rgb(0, 255, 251);
+    font-weight: 700;
+}
+
+button.grade {
+    display: inline-block;
+    border: 10px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 24%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.579);  
+}
+
+button.grade:hover {
+    border: 2px solid #000000;
+}
+
+/* 2. Speed Detector */
+
+

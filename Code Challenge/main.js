@@ -1,5 +1,6 @@
+// 1. Student Grading
 function studentGrade() {
-  const marks = document.getElementById("marks").value;
+  const marks = prompt("Enter the Student's Marks:");
   const gradeNumber = parseFloat(marks);
 
   let grade;
@@ -21,3 +22,6 @@ function studentGrade() {
   const grading = document.getElementById("grading");
   grading.innerHTML = grade;
 }
+
+// 2. Speed Detector
+
