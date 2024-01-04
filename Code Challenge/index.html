@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Code Challenges</title>
   </head>
   <body>
-
     <h1>CODE CHALLENGES</h1>
     <!-- Challenge 1: Student Grade Generator -->
     <div id="form">
@@ -20,19 +19,54 @@
     </div>
 
     <div class="info1">
-      <img src="./images/info1.png" width="100px" height="80px" alt="graduation cap" class="img1">
+      <img
+        src="./images/info1.png"
+        width="100px"
+        height="80px"
+        alt="graduation cap"
+        class="img1"
+      />
       <h4 class="grad">Grade Calculator</h4>
-      <p>Use this calculator to find out the grade of a Student pass-mark. 
-        This calculator accepts only numerical values and does not accept letters.</p>
-      <p>Click on the button and enter a number between 0 to 100 to get a grade. 
-          The grades are as follows; A > 79, B - 60 to 79, C - 59 to 49, 
-          D - 40 to 49, E - less than 40.</p>
+      <p>
+        Use this calculator to find out the grade of a Student pass-mark. This
+        calculator accepts only numerical values and does not accept letters.
+      </p>
+      <p>
+        Click on the button and enter a number between 0 to 100 to get a grade.
+        The grades are as follows; A > 79, B - 60 to 79, C - 59 to 49, D - 40 to
+        49, E - less than 40.
+      </p>
     </div>
 
     <!-- Challenge 2: Speed Detector (goes below) -->
-    
-    
-    
+    <div class="circle">
+      <input type="number" id="inputNumber" placeholder="Enter Speed:" />
+      <button onclick="calculatePoints()" class="speed">Calculate</button>
+    </div>
+
+    <div class="info2">
+      <img
+        src="./images/info2.png"
+        width="100px"
+        height="100px"
+        alt="suspended sign"
+        class="img2"
+      />
+      <h4 class="sped">Speed Detector</h4>
+      <p>
+        This is a speed calculator which gives drivers one demerit point for
+        going 5km/h above the speed limit (70 km/h). The application
+        automatically adds the cumulative points, when the driver gets more than
+        12 points, an alert pops, showing the license is suspended.
+      </p>
+      <p>
+        The application automatically resets to zero when the license is
+        suspended
+      </p>
+    </div>
+
+    <!-- Challenge 3: Net Salary Calculator-->
+
     <script src="main.js"></script>
   </body>
-  </html>
+</html>

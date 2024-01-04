@@ -24,4 +24,28 @@ function studentGrade() {
 }
 
 // 2. Speed Detector
+let totalPoints = 0;
 
+function calculatePoints() {
+  let speed = parseFloat(document.getElementById("inputNumber").value);
+  let speedLimit = 70;
+
+  if (isNaN(speed)) {
+    alert("Enter Valid Number");
+    return;
+  }
+
+  let points = Math.round((speed - speedLimit) / 5);
+  if (speed <= speedLimit) {
+    alert("OK");
+  } else {
+    totalPoints += points;
+
+    if (totalPoints > 12) {
+      alert("Licence Suspended!");
+      totalPoints = 0;
+    } else {
+      alert("You have " + totalPoints + " points!");
+    }
+  }
+}
