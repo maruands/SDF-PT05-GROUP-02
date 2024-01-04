@@ -10,10 +10,19 @@ body{
     border:1px solid black;
     border-radius: 5px;
     width: 600px;
-    height: 300px;
+    height: auto;
+    
+}
+#speed{
     top: 50%;
     left: 50%;
     transform:translate(-50%,50%);
+    position:absolute;
+}
+#payee{
+    top: 70%;
+    left: 50%;
+    transform:translate(-50%,200%);
     position:absolute;
 }
 .card{

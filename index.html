@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="speed">
         <div class="card">
             <div class="card-header">
                 Speed Detector
@@ -16,6 +16,44 @@
                     <label for="carSpeed">Car Speed</label>
                     <input type="number" name="carSpeed" id="carSpeed">
                     <button type="submit" onclick="carSpeed()">Submit</button>
+            </div>
+            <div class="card-body" id="points">
+                <p>Demerit points : <span></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="payee">
+        <div class="card">
+            <div class="card-header">
+                PAYEE
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="year">Year of taxation</label>
+                    <select name="year" id="year_of_taxation">
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="period">Payment period</label>
+                    <input type="radio" name="period" id="month">
+                    <input type="radio" name="period" id="year">
+                </div>
+                <div class="form-group">
+                    <label for="gross">Gross Salary</label>
+                    <input type="text" name="gross" id="gross">
+                </div>
+                <div class="form-group">
+                    <label for="benefit">Contribution Benefit</label>
+                    <input type="text" name="benefit" id="benefit">
+                </div>
+                <div class="form-group">
+                    <button type="submit" onclick="calculatePayee()">Calculate</button>
+                </div>
             </div>
         </div>
     </div>
