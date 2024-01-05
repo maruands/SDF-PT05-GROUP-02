@@ -66,6 +66,112 @@
     </div>
 
     <!-- Challenge 3: Net Salary Calculator-->
+    <div class="container">
+      <label id="salaryLabel">Net Salary Calculator:</label>
+      <input type="number" id="salary" placeholder="Enter Basic Salary" />
+      <input type="number" id="benefits" placeholder="Benefits" />
+      <button onclick="netPay()" class="npay">Calculate Net Pay</button>
+    </div>
+
+    <div class="info3">
+      <img
+        src="./images/info3.png"
+        width="70px"
+        height="65px"
+        alt="tax"
+        class="img3"
+      />
+      <h4 class="net">Net Salary Calculator</h4>
+      <p>
+        This is a calculator which works out an employee's net pay by
+        subtracting PAYE, NSSF, NHIF, and pension fund contribution from the
+        monthly gross pay. In order to work out taxable pay, the calculator
+        requires Basic Salary and any allowances in order to compute.
+      </p>
+      <p>
+        Currently Housing Levy has not been implemented as we await the final
+        Court ruling on Jan 10, 2024.
+      </p>
+    </div>
+
+    <div class="paySlip">
+      <div class="column"></div>
+      <h3>INCOME</h3>
+      <table>
+        <tr>
+          <th>Basic Salary</th>
+          <td id="basicPay"></td>
+        </tr>
+        <tr>
+          <th>Benefits</th>
+          <td id="allowances"></td>
+        </tr>
+        <tr>
+          <th>Gross Pay</th>
+          <td id="grossPay"></td>
+        </tr>
+        <tr>
+          <th>Less NSSF</th>
+          <td id="nssf"></td>
+        </tr>
+      </table>
+      <div class="column">
+        <h3>DEDUCTIONS</h3>
+        <table>
+          <tr>
+            <th>Taxable Amount</th>
+            <td id="taxableAmount"></td>
+          </tr>
+          <tr>
+            <th>Tax Band (1)</th>
+            <td id="incomeBracket1"></td>
+          </tr>
+          <tr>
+            <th>Tax Band (2)</th>
+            <td id="incomeBracket2"></td>
+          </tr>
+          <tr>
+            <th>Tax Band (3)</th>
+            <td id="incomeBracket3"></td>
+          </tr>
+          <tr>
+            <th>Tax Band (4)</th>
+            <td id="incomeBracket4"></td>
+          </tr>
+          <tr>
+            <th>Tax Band (5)</th>
+            <td id="incomeBracket5"></td>
+          </tr>
+          <tr>
+            <th>Tax Charged</th>
+            <td id="taxCharged"></td>
+          </tr>
+          <tr>
+            <th>Personal Relief</th>
+            <td id="personalRelief"></td>
+          </tr>
+          <tr>
+            <th>NHIF Relief</th>
+            <td id="nhifRelief"></td>
+          </tr>
+          <tr>
+            <th>PAYE</th>
+            <td id="payee"></td>
+          </tr>
+          <tr>
+            <th>NHIF</th>
+            <td id="nhif"></td>
+          </tr>
+          <tr>
+            <th>NET PAY</th>
+            <td
+              id="netPay"
+              style="color: rgb(254, 237, 0); font-size: 18px; font-weight: 700"
+            ></td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>

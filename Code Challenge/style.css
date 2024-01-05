@@ -171,3 +171,120 @@ button:hover {
 }
 
 /* 3. Net Salary Calculator */
+
+.container {
+    position: absolute;
+    height: 270px;
+    width: 365px;
+    left: 20%;
+    top: 200%;
+    transform: translate(-50%, 10px);
+    border-radius: 1px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.101);
+    background-color: rgb(11, 11, 11);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);
+}
+
+
+.img3, h4.net {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.info3 {
+    height: 220px;
+    width: 440px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 210%;
+    left: 84%;
+    border-radius: 10px;
+    transform: translate(-50%, -17%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 6px;
+}
+
+th {
+    background-color: #080808;
+}
+
+.row {
+    display: flex;
+}
+
+.row>div {
+    flex: 1;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.paySlip {
+    display: block;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 200%;
+    width: 300px;
+    transform: translate(-40%, 10px);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#salaryLabel {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: underline;
+    color: aqua;
+    font-size: 24px;
+}
+
+#salary, #benefits {
+    text-align: center;
+    display: block;
+    height: 18px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.npay {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
