@@ -5,15 +5,19 @@ h1 {
 
 /* 1. Student Grade Generator */
 
-.img1, .img2, .img3 {
+.img1,
+.img2,
+.img3 {
     display: inline-block;
     vertical-align: middle;
 
 }
 
-h4.grad, h4.sped, h4.net {
+h4.grad,
+h4.sped,
+h4.net {
     display: inline-block;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
 
 .info1 {
@@ -35,6 +39,7 @@ div.stgrade {
     left: 17%;
 
 }
+
 #grading {
     padding: 5px;
     background-color: #000000d4;
@@ -44,7 +49,7 @@ div.stgrade {
     font-size: large;
     font-weight: 400;
     height: 25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 button.grade {
@@ -64,18 +69,20 @@ button.grade {
 }
 
 button.grade:before {
-    position: absolute; top: 5px; left: 50%;
+    position: absolute;
+    top: 5px;
+    left: 50%;
     margin-left: -60px;
     width: 120px;
     height: 80px;
     border-radius: 100% 100% 70% 70%;
-  }
+}
 
 button.grade:hover {
     box-shadow: 0 0 0 7px #fff, 0 0 0 9px #0A5ACB;
     font-size: x-large;
     color: white;
-  }
+}
 
 button.grade:active {
     box-shadow: 0 0 0 7px #17191a, 0 0 0 20px #000000;
@@ -97,7 +104,7 @@ div.circle {
     padding: 10px;
     border-radius: 50%;
     background-color: #111;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);    
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);
 }
 
 #meter {
@@ -109,22 +116,27 @@ div.circle {
 #meter-bg-bar {
     animation: dash 4s linear forwards infinite;
     stroke-dasharray: 615;
-  }
-  @keyframes dash {
+}
+
+@keyframes dash {
+
     0%,
     100% {
-      stroke-dashoffset: 615;
+        stroke-dashoffset: 615;
     }
+
     25% {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
+
     50% {
-      stroke-dashoffset: 307.5;
+        stroke-dashoffset: 307.5;
     }
+
     75% {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
-  }
+}
 
 .circle:hover {
     box-shadow: 0 17px 50px 0 rgba(108, 144, 90, 0.847);
@@ -140,7 +152,8 @@ div.circle {
     position: absolute;
     bottom: 25px;
     z-index: 1;
-  }
+}
+
 .result {
     padding: 1px;
     background-color: #000000;
@@ -286,7 +299,8 @@ h3 {
     font-size: 24px;
 }
 
-#salary, #benefits {
+#salary,
+#benefits {
     text-align: center;
     display: block;
     height: 18px;
@@ -309,7 +323,7 @@ h3 {
     color: black;
     font-weight: 700;
     border-radius: 10px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .npay:hover {

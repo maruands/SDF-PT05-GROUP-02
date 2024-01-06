@@ -31,10 +31,9 @@ function calculatePoints() {
 
 // Function to update the speed display dashboard
 function updateSpeedDisplay() {
-  
   let meterBar = document.getElementById("inputNumber").value;
   let speed = Math.round(meterBar);
-  
+
   let speedDisplay = document.getElementById("speed");
   speedDisplay.textContent = speed;
 }
