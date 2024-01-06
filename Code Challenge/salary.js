@@ -133,4 +133,4 @@ function netPay() {
     document.getElementById("payee").innerHTML = payee.toLocaleString();
     document.getElementById("nhif").innerHTML = nhif.toLocaleString();
     document.getElementById("netPay").innerHTML = netPay.toLocaleString();
-  
+} 
