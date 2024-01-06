@@ -5,26 +5,15 @@ h1 {
 
 /* 1. Student Grade Generator */
 
-#form {
-    height: 220px;
-    width: 300px;
-    background-color: #000000;
-    position: absolute;
-    top: 35%;
-    left: 20%;
-    transform: translate(-50%, -17%);
-    border-radius: 10px;
-    backdrop-filter: blur(3px);
-    border: 2px solid rgba(255, 255, 255, 0.124);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);
-    padding: 40px 45px;
-}
-
-.img1,
-h4.grad {
+.img1, .img2, .img3 {
     display: inline-block;
     vertical-align: middle;
 
+}
+
+h4.grad, h4.sped, h4.net {
+    display: inline-block;
+    vertical-align: middle;    
 }
 
 .info1 {
@@ -38,84 +27,127 @@ h4.grad {
     transform: translate(-50%, -17%);
 }
 
-
-
-h1.stgrade {
-    margin-top: -15px;
-    text-align: center;
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-    font-size: 24px;
+div.stgrade {
+    border-radius: 50%;
+    transition: 0.3s;
+    height: 300px;
+    width: 300px;
+    left: 17%;
 
 }
-
-.label {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-
-}
-
-
 #grading {
-    padding: 10px;
+    padding: 5px;
+    background-color: #000000d4;
+    border-radius: 5px;
+    color: rgb(238, 209, 21);
     text-align: center;
-    font-size: 28px;
-    color: rgb(0, 255, 251);
-    font-weight: 700;
+    font-size: large;
+    font-weight: 400;
+    height: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 button.grade {
-    display: inline-block;
-    border: 10px;
-    margin-left: 75px;
-    margin-bottom: 20px;
-    width: 50%;
-    height: 24%;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 8px;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 10px;
+    position: relative;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(52, 152, 219), rgb(2, 18, 111));
+    border-radius: 50%;
+    transition: 0.3s;
+    height: 300px;
+    width: 300px;
+    left: 90%;
+    top: 20%;
+    font-size: large;
+    transform: translate(-50%, 15%);
+    padding: 10px;
     cursor: pointer;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.579);
+    color: #fff;
 }
 
+button.grade:before {
+    position: absolute; top: 5px; left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    height: 80px;
+    border-radius: 100% 100% 70% 70%;
+  }
+
 button.grade:hover {
-    border: 2px solid #000000;
+    box-shadow: 0 0 0 7px #fff, 0 0 0 9px #0A5ACB;
+    font-size: x-large;
+    color: white;
+  }
+
+button.grade:active {
+    box-shadow: 0 0 0 7px #17191a, 0 0 0 20px #000000;
+    color: rgb(0, 0, 0);
 }
+
 
 /* 2. Speed Detector */
 
 div.circle {
-    background-image: url(./images/speed.png);
     background-repeat: no-repeat;
     background-size: 100%, contain;
     position: absolute;
-    height: 380px;
-    width: 380px;
+    height: 400px;
+    width: 400px;
     left: 18%;
     top: 108%;
     transform: translate(-50%, 10px);
     padding: 10px;
     border-radius: 50%;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);
+    background-color: #111;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);    
 }
+
+#meter {
+    position: relative;
+    left: 6%;
+    top: 14%;
+}
+
+#meter-bg-bar {
+    animation: dash 4s linear forwards infinite;
+    stroke-dasharray: 615;
+  }
+  @keyframes dash {
+    0%,
+    100% {
+      stroke-dashoffset: 615;
+    }
+    25% {
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dashoffset: 307.5;
+    }
+    75% {
+      stroke-dashoffset: 0;
+    }
+  }
 
 .circle:hover {
     box-shadow: 0 17px 50px 0 rgba(108, 144, 90, 0.847);
 }
 
-.img2,
-h4.sped {
-    display: inline-block;
-    vertical-align: middle;
-
+#speed {
+    color: white;
+    font-size: 36px;
+    line-height: 100%;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 25px;
+    z-index: 1;
+  }
+.result {
+    padding: 1px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: rgba(217, 240, 9, 0.847);
+    text-align: center;
+    font-size: large;
 }
 
 .info2 {
@@ -129,18 +161,16 @@ h4.sped {
     transform: translate(-50%, -17%);
 }
 
-
-
 input#inputNumber {
     text-align: center;
     position: absolute;
-    height: 30px;
-    width: 57%;
-    left: 20%;
-    top: 68%;
+    height: 25px;
+    width: 50%;
+    left: 23%;
+    top: 71%;
     display: block;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 300;
     color: rgb(243, 68, 62);
     margin-bottom: 4%;
     padding: 1%;
@@ -151,7 +181,7 @@ button.speed {
     position: absolute;
     height: 40px;
     width: 44%;
-    left: 28%;
+    left: 27%;
     top: 82%;
     display: block;
     text-align: center;
@@ -181,19 +211,12 @@ button:hover {
     transform: translate(-50%, 10px);
     border-radius: 1px;
     padding: 15px;
-    border-radius: 8px;
-    background-color: blanchedalmond;
+    background-color: rgb(250, 250, 250);
     backdrop-filter: blur(3px);
     border: 2px solid rgba(255, 255, 255, 0.101);
-    background-color: rgb(11, 11, 11);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.804);
-}
-
-
-.img3, h4.net {
-    display: inline-block;
-    vertical-align: middle;
-
 }
 
 .info3 {
@@ -259,7 +282,7 @@ h3 {
     font-weight: 600;
     padding: 10px;
     text-decoration: underline;
-    color: aqua;
+    color: rgb(255, 255, 255);
     font-size: 24px;
 }
 
@@ -286,5 +309,10 @@ h3 {
     color: black;
     font-weight: 700;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer;    
+}
+
+.npay:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.381), 0 6px 20px 0 rgba(255, 255, 255, 0.455);
+    font-size: 14px;
 }
