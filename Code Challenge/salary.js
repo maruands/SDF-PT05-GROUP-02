@@ -63,7 +63,7 @@ let nhif;
       nhif= 1700;
   }
 
-const taxablePay = grossPay - nssf;
+const taxablePay = grossPay - (nssf + nssf);
 
 
 let incomeBracket1;
