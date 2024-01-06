@@ -8,11 +8,21 @@
     <title>Code Challenges</title>
   </head>
   <body>
-    <h1>CODE CHALLENGES</h1>
+    <h1 class="topic">CODE CHALLENGES</h1>
+
+    <!--Contributors-->
+    <ul class="coded_by">
+      <h4>Coded by:</h4>
+      <li>Rosalia Njoki Wanjohi</li>
+      <li>Nabil</li>
+      <li>Sankana</li>
+      <li>Andrew Lagat</li>
+    </ul>
     <!-- Challenge 1: Student Grade Generator -->
 
     <div class="stgrade">
-      <button onclick="studentGrade()" class="grade">GRADE</button>
+      <button onclick="studentGrade()" class="grade">GRADE <span class="tooltip">Click</span></button>
+      
     </div>
 
     <div class="info1">
@@ -42,7 +52,7 @@
       <svg
         width="399"
         id="meter"
-        height="230"
+        height="180"
         viewBox="0 0 399 266"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -177,34 +187,35 @@
         Court ruling on Jan 10, 2024.
       </p>
     </div>
-
+ 
     <div class="paySlip">
-      <div class="column"></div>
-      <h3>INCOME</h3>
-      <table>
-        <tr>
-          <th>Basic Salary</th>
-          <td id="basicPay"></td>
-        </tr>
-        <tr>
-          <th>Benefits</th>
-          <td id="allowances"></td>
-        </tr>
-        <tr>
-          <th>Gross Pay</th>
-          <td id="grossPay"></td>
-        </tr>
-        <tr>
-          <th>Less NSSF</th>
-          <td id="nssf"></td>
-        </tr>
-      </table>
+      <div class="column">
+        <h3>INCOME</h3>
+        <table>
+          <tr>
+            <th>Basic Salary</th>
+            <td id="basicPay"></td>
+          </tr>
+          <tr>
+            <th>Benefits</th>
+            <td id="allowances"></td>
+          </tr>
+          <tr>
+            <th>Gross Pay</th>
+            <td id="grossPay"></td>
+          </tr>
+          <tr>
+            <th>Less NSSF</th>
+            <td id="nssf"></td>
+          </tr>
+        </table>
+      </div>
       <div class="column">
         <h3>DEDUCTIONS</h3>
         <table>
           <tr>
             <th>Taxable Amount</th>
-            <td id="taxableAmount"></td>
+            <td id="taxableAmount">0</td>
           </tr>
           <tr>
             <th>Tax Band (1)</th>
@@ -230,32 +241,37 @@
             <th>Tax Charged</th>
             <td id="taxCharged"></td>
           </tr>
-          <tr>
-            <th>Personal Relief</th>
-            <td id="personalRelief"></td>
-          </tr>
-          <tr>
-            <th>NHIF Relief</th>
-            <td id="nhifRelief"></td>
-          </tr>
-          <tr>
-            <th>PAYE</th>
-            <td id="payee"></td>
-          </tr>
-          <tr>
-            <th>NHIF</th>
-            <td id="nhif"></td>
-          </tr>
-          <tr>
-            <th>NET PAY (Kes)</th>
-            <td
-              id="netPay"
-              style="color: rgb(254, 237, 0); font-size: 18px; font-weight: 700"
-            ></td>
-          </tr>
         </table>
-      </div>
-    </div>
+        </div>
+        <div class="column">
+          <h3></h3>
+          <table>
+            <tr>
+              <th>Personal Relief</th>
+              <td id="personalRelief">0</td>
+            </tr>
+            <tr>
+              <th>NHIF Relief</th>
+              <td id="nhifRelief"></td>
+            </tr>
+            <tr>
+              <th>PAYE</th>
+              <td id="payee"></td>
+            </tr>
+            <tr>
+              <th>NHIF</th>
+              <td id="nhif"></td>
+            </tr>
+            <tr>
+              <th>NET PAY (Kes)</th>
+              <td
+                id="netPay"
+                style="color: rgb(254, 237, 0); font-size: 18px; font-weight: 700"
+              ></td>
+            </tr>
+          </table> 
+        </div>
+    </div> 
     <script src="grade.js"></script>
     <script src="netpay.js"></script>
     <script src="speedDetector.js"></script>

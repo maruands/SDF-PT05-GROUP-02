@@ -1,8 +1,15 @@
+body {
+    background-color: #d4cfcf21;
+    height: 1600px;
+}
 h1 {
     text-align: center;
     text-decoration: underline;
 }
-
+h1.topic {
+    font-family: sans-serif;
+    color: rgb(172, 167, 139);
+}
 /* 1. Student Grade Generator */
 
 .img1,
@@ -20,15 +27,37 @@ h4.net {
     vertical-align: middle;
 }
 
+.coded_by {
+    display: inline-flex;
+    z-index: 10;
+    position: absolute;
+    justify-content: space-evenly;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.coded_by li {
+    padding: 0 25px 0 10px;
+    list-style-type: custom-counter-style;
+    margin: 0;
+    display: block;
+}
+
+.coded_by h4{
+    padding: 0;
+    margin: 0;
+}
+
 .info1 {
     height: 220px;
-    width: 440px;
+    width: 500px;
     background-color: #ffffff;
     position: absolute;
     top: 35%;
     left: 60%;
     border-radius: 10px;
     transform: translate(-50%, -17%);
+    padding: 10px;
 }
 
 div.stgrade {
@@ -49,13 +78,26 @@ div.stgrade {
     font-size: large;
     font-weight: 400;
     height: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid rgb(238, 209, 21);
 }
+
+.tooltip {
+    color: black;
+    position: relative;
+    visibility: hidden;
+    left: 3%;
+    z-index: 5;
+    font-size: 10px;
+}
+
+
 
 button.grade {
     position: relative;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(52, 152, 219), rgb(2, 18, 111));
     border-radius: 50%;
+    border: 4px solid white;
     transition: 0.3s;
     height: 300px;
     width: 300px;
@@ -84,6 +126,11 @@ button.grade:hover {
     color: white;
 }
 
+button.grade:hover .tooltip {
+    visibility: visible;
+    color: white;
+}
+
 button.grade:active {
     box-shadow: 0 0 0 7px #17191a, 0 0 0 20px #000000;
     color: rgb(0, 0, 0);
@@ -96,10 +143,10 @@ div.circle {
     background-repeat: no-repeat;
     background-size: 100%, contain;
     position: absolute;
-    height: 400px;
-    width: 400px;
-    left: 18%;
-    top: 100%;
+    height: 330px;
+    width: 330px;
+    left: 20%;
+    top: 90%;
     transform: translate(-50%, 10px);
     padding: 10px;
     border-radius: 50%;
@@ -109,7 +156,7 @@ div.circle {
 
 #meter {
     position: relative;
-    left: 6%;
+    left: -6%;
     top: 14%;
 }
 
@@ -146,7 +193,7 @@ div.circle {
     color: white;
     font-size: 36px;
     line-height: 100%;
-    top: 41%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -165,13 +212,14 @@ div.circle {
 
 .info2 {
     height: 220px;
-    width: 440px;
+    width: 500px;
     background-color: #ffffff;
     position: absolute;
-    top: 113%;
+    top: 100%;
     left: 60%;
     border-radius: 10px;
     transform: translate(-50%, -17%);
+    padding: 10px;
 }
 
 input#inputNumber {
@@ -217,13 +265,13 @@ button:hover {
 
 .container {
     position: absolute;
-    height: 270px;
+    height: 230px;
     width: 365px;
     left: 20%;
-    top: 200%;
+    top: 160%;
     transform: translate(-50%, 10px);
     border-radius: 1px;
-    padding: 15px;
+    padding: 10px;
     background-color: rgb(250, 250, 250);
     backdrop-filter: blur(3px);
     border: 2px solid rgba(255, 255, 255, 0.101);
@@ -234,13 +282,14 @@ button:hover {
 
 .info3 {
     height: 220px;
-    width: 440px;
+    width: 500px;
     background-color: #ffffff;
     position: absolute;
-    top: 210%;
-    left: 84%;
+    top: 171%;
+    left: 60%;
     border-radius: 10px;
     transform: translate(-50%, -17%);
+    padding: 10px;
 }
 
 table {
@@ -272,13 +321,14 @@ h3 {
 }
 
 .paySlip {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
-    left: 50%;
-    top: 200%;
-    width: 300px;
+    left: 35%;
+    top: 210%;
+    width: 977px;
     transform: translate(-40%, 10px);
     padding: 10px;
     border-radius: 10px;
@@ -286,7 +336,9 @@ h3 {
     color: white;
     background-color: rgb(0, 0, 0);
 }
-
+.column h3 {
+    margin-bottom: 10px;
+}
 #salaryLabel {
     display: block;
     text-align: center;
@@ -303,7 +355,7 @@ h3 {
 #benefits {
     text-align: center;
     display: block;
-    height: 18px;
+    height: 10px;
     width: 90%;
     background-color: rgb(255, 255, 255);
     border-radius: 9px;
