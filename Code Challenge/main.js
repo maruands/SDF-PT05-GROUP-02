@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 1. Student Grading
 function studentGrade() {
   const marks = prompt("Enter the Student's Marks:");
@@ -201,3 +202,6 @@ const netPay = grossPay - (payee + nssf + nhif);
   document.getElementById("nhif").innerHTML = nhif.toLocaleString();
   document.getElementById("netPay").innerHTML = netPay.toLocaleString();
 }
+=======
+1.
+>>>>>>> 0bb852bebbc96a1b38d047509b95501786288dc3

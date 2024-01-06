@@ -92,7 +92,7 @@ div.circle {
     height: 400px;
     width: 400px;
     left: 18%;
-    top: 108%;
+    top: 100%;
     transform: translate(-50%, 10px);
     padding: 10px;
     border-radius: 50%;
@@ -155,7 +155,7 @@ div.circle {
     width: 440px;
     background-color: #ffffff;
     position: absolute;
-    top: 121%;
+    top: 113%;
     left: 60%;
     border-radius: 10px;
     transform: translate(-50%, -17%);
