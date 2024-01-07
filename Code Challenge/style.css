@@ -1,6 +1,6 @@
 body {
     background-color: #d4cfcf21;
-    height: 1600px;
+    height: 1800px;
 }
 h1 {
     text-align: center;
@@ -81,16 +81,6 @@ div.stgrade {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 1px solid rgb(238, 209, 21);
 }
-
-.tooltip {
-    color: black;
-    position: relative;
-    visibility: hidden;
-    left: 3%;
-    z-index: 5;
-    font-size: 10px;
-}
-
 
 
 button.grade {
