@@ -4,18 +4,21 @@ let totalPoints = 0;
 function calculatePoints() {
   let speed = parseFloat(document.getElementById("inputNumber").value);
   let speedLimit = 70;
+  let points;
+  const message = document.getElementById("message");
   updateSpeedDisplay();
   if (isNaN(speed)) {
     alert("Enter Valid Number");
     return;
   }
-
-  let points = Math.round((speed - speedLimit) / 5);
-  const message = document.getElementById("message");
   if (speed <= speedLimit) {
     //alert("OK");
     message.innerHTML = "OK";
+  } else if(speed > speedLimit && speed < 75) {
+    points = 0;
+    message.innerHTML = "Your demerit points : "+ points + "</br> Total Points : " + totalPoints;
   } else {
+    points = Math.round((speed - speedLimit) / 5);
     totalPoints += points;
 
     if (totalPoints > 12) {
@@ -24,7 +27,7 @@ function calculatePoints() {
       totalPoints = 0;
     } else {
       //alert("You have " + totalPoints + " points!");
-      message.innerHTML = "You have " + totalPoints + " points!";
+      message.innerHTML = "Your demerit points : "+ points + "</br> Total Points : " + totalPoints;
     }
   }
 }
