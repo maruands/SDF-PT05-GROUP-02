@@ -13,20 +13,17 @@ function calculatePoints() {
   }
   if (speed <= speedLimit) {
     //alert("OK");
-    message.innerHTML = "OK";
+    message.innerHTML = "<span style='color:green'>OK</span>";
   } else if(speed > speedLimit && speed < 75) {
     points = 0;
     message.innerHTML = "Your demerit points : "+ points + "</br> Total Points : " + totalPoints;
   } else {
     points = Math.round((speed - speedLimit) / 5);
     totalPoints += points;
-
     if (totalPoints > 12) {
-      //alert("Licence Suspended!");
-      message.innerHTML = "Licence Suspended!";
+      message.innerHTML = "<span style='color:red'>Licence Suspended!</span>";
       totalPoints = 0;
     } else {
-      //alert("You have " + totalPoints + " points!");
       message.innerHTML = "Your demerit points : "+ points + "</br> Total Points : " + totalPoints;
     }
   }
